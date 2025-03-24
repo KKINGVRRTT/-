@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver|Home</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav style="left: 0; position: absolute;">
+        <ul>
+            <a href="index.html">Home</a></li>
+            <a href="memes.html">Memes</a></li>
+            <a href="Home.html">About</a></li>
+        </ul>
+    </nav>    
+
+</div>
+    <h1>Home</h1>
+    <br>
+    <br>
+    <img src="Assets/me.jpg" alt="oliver king duhhh" class="center-image" id = "ing" style = "width: 500px; height: 625px; box-shadow: 0px 0px 50px 10px rgb(20, 132, 229); border-radius: 10px;"> 
+    <button class="button">Music</button> 
+    <audio controls style="display: none;" id = "audio" src = "Assets/Music/distorted meknow.mp3"></audio> 
+    <script>
+        var audio = document.getElementById("audio");
+        var button = document.querySelector(".button");
+        var isPlaying = false;
+        button.addEventListener("click", function(){
+            if(isPlaying){
+                audio.pause();
+                isPlaying = false;
+            }else{
+                audio.play();
+                isPlaying = true;
+            }
+        });
+    </script>
+    <p></p>
+</body>
+<Footer>Oliver King© 2025</Footer>
+<footer>hey.im.ok@gmail.com</footer> 
+</html>
